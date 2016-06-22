@@ -1,0 +1,53 @@
+html.fluid {
+  // font-size: 55.3%;
+  // @media (min-width:1024px) {
+  //   font-size: 62.5%;
+  // }
+  font-size: 62.5%;
+  @media (min-width:1600px) {
+    font-size: 72.9%;
+  }
+}
+
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: normal;
+}
+
+h1, .h1 {
+  line-height: 1.2;
+  @media #{map-get($bps, 'sm')} {
+    font-size: 2.4rem;
+  }
+  @media #{map-get($bps, 'md')} {
+    font-size: 2.6vw;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.invert .text a {
+  color: #808080;
+  &.active { color: $black; }
+}
+
+.no-touch {
+  .invert .text a:hover { color: $black; }
+}
+
+.owl > * + * {
+  margin-top: 1em;
+}
+
+.text li {
+  padding-left: 2em;
+  text-indent: -2em;
+}
